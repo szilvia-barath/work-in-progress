@@ -1,0 +1,28 @@
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --dark-blue: rgba(22, 92, 127, 1);
+    --light-blue: rgba(32, 196, 196, 1);
+    --green: rgba(66, 206, 99, 1);
+    --title-font-family: "Startup-Bold-Regular", Helvetica;
+    --title-font-weight: 400;
+    --title-font-size: 12px;
+    --title-letter-spacing: 0px;
+    --title-line-height: normal;
+    --title-font-style: normal;
+    --text-font-family: "Startup-Regular-Regular", Helvetica;
+    --text-font-weight: 400;
+    --text-font-size: 12px;
+    --text-letter-spacing: 0px;
+    --text-line-height: normal;
+    --text-font-style: normal;
+    --logo-font-family: "OfeliaStd-Regular", Helvetica;
+    --logo-font-weight: 400;
+    --logo-font-size: 12px;
+    --logo-letter-spacing: 0px;
+    --logo-line-height: normal;
+    --logo-font-style: normal;
+    --collection-1-black: rgba(0, 0, 0, 1);
+    --collection-1-green: rgba(66, 206, 99, 1);
+    --collection-1-blue: rgba(32, 196, 196, 1);
+    --collection-1-a: rgba(66, 206, 99, 1);
+  }
