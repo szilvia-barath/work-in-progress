@@ -52,12 +52,12 @@ body {
     position: absolute;
     margin: 0;
     padding: 0;
-
+    left: 0;
     width: 100%;
     height: 100vh;
     opacity: 0.45;
     background: url('../assets/images/wave.svg') repeat center center fixed;
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     pointer-events: none;
