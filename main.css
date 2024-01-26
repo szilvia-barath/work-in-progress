@@ -27,6 +27,7 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
+
 body {
     font-family: 'Startup-Regular', sans-serif;
     border: 0;
@@ -269,17 +270,15 @@ body {
     left: 0;
     bottom: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
-
 .text-info {
-    margin-left: 0.5em;
     position: relative;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-
 }
+
 
 /*media queries*/
 /* Extra small devices (phones, 600px and down) */
