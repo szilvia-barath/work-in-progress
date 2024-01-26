@@ -261,8 +261,8 @@ body {
 }
 
 .footer {
-    background: linear-gradient(179deg, #102937 55%, #2f2f2f 55%, #102937 20%);
-    opacity: 0.95;
+    background: #061829;
+    mix-blend-mode: multiply;
     width: 100%;
     position: fixed;
     left: 0;
