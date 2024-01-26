@@ -10,12 +10,13 @@
 
 .logo-regular {
     background-image: url(../assets/images/DARE.png);
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     mix-blend-mode: multiply;
+    z-index: 1;
 }
 .fade-out {
     opacity: 0;
@@ -58,17 +59,47 @@ body {
 }
 
 .button-container {
+    border: 0;
+    background: transparent;
+    padding: 1em;
+    align-items: center;
     justify-content: center;
     display: flex;
     position: absolute;
-    bottom: 0;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .call-to-action {
     border: 0;
     background: transparent;
     padding: 1em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 1em;
+    animation: floatAnimation 2s infinite;
+    font-family: Startup-Regular;
+    color: #244257;
+}
+
+.call-to-action:hover {
+    color: rgba(61,118,145,1);
+    font-size: larger;
 }
 .box {
     position: relative;
@@ -93,33 +124,35 @@ body {
 
 .bg-gradient {
     background: linear-gradient(179deg, #102937 55%, #2f2f2f 55%, #102937 20%);
-    opacity: 0.65;
+    opacity: 0.85;
 
 }
 
 .card-box {
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
     width: 60vw;
     border-radius: 0px;
+    display: flex;
+    margin: 0 auto;
+
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 0px;
     box-sizing: border-box;
     color: #EDF5F7;
-    position: relative;
     border: 0;
     height: 7em;
+    transition: 0.8s;
 }
 
 .card a {
     align-items: center;
     justify-content: center;
-}
+   }
 
 .first-card {
     border-top-left-radius: 10px;
@@ -149,11 +182,13 @@ body {
     background: #102937;
     height: auto;
     opacity: 0.95;
-    margin-top: 2.2em;
     height: 10em;
     border: 0;
 }
 
+.card:hover {
+    border-radius: 0;
+}
 .card:hover a {
     position: absolute;
     top: 5px;
@@ -227,12 +262,13 @@ body {
 
 .footer {
     background: linear-gradient(179deg, #102937 55%, #2f2f2f 55%, #102937 20%);
-    opacity: 0.65;
+    opacity: 0.95;
     width: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .text-info {

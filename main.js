@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function navigateToPage2() {
     document.body.classList.add('fade-out');
     setTimeout(function () {
-        window.location.href = 'landing.html';
+        window.location.href = 'home.html';
     }, 500);
 }
 
