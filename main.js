@@ -25,3 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
         transparencyText.classList.add('hidden');
     });
 });
+
+function navigateToPage2() {
+    document.body.classList.add('fade-out');
+    setTimeout(function () {
+        window.location.href = 'landing.html';
+    }, 500);
+}
+
