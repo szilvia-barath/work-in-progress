@@ -265,15 +265,8 @@ body {
 }
 
 
-.transparency-text {
-    color: #EDF5F7;
-    text-align: left;
-    font-size: 1em;
-}
-
 .footer {
     background: #061829;
-    mix-blend-mode: multiply;
     width: 100%;
     position: fixed;
     left: 0;
@@ -288,6 +281,11 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    color: white;
+}
+
+.text-info a {
+    color: white;
 }
 
 /*media queries*/
