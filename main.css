@@ -24,6 +24,23 @@
     mix-blend-mode: multiply;
     z-index: 1;
 }
+
+.logo-regular-index {
+    background-image: url(../assets/images/DARE.png);
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    mix-blend-mode: multiply;
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .fade-out {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -54,7 +71,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     opacity: 0.45;
     background: url('../assets/images/wave.svg');
     background-size: cover;
@@ -65,9 +82,17 @@ body {
 
 }
 
+
+
+.container-fluid-index {
+    height: 100vh;
+    margin-top: 15em; /*center logo horizontally*/
+}
+
 .container-fluid {
     overflow: hidden;
 }
+
 .button-container {
     border: 0;
     background: transparent;
@@ -101,7 +126,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: 1em;
+    margin-top: 15em;
     animation: floatAnimation 2s infinite;
     font-family: Startup-Regular;
     color: #244257;
@@ -281,6 +306,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+  
     color: white;
 }
 
