@@ -15,13 +15,12 @@
 }
 
 .logo-regular {
-    background-image: url(../assets/images/DARE.png);
+    background-image: url(../assets/images/DARE3.png);
     height: 50vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    mix-blend-mode: multiply;
     z-index: 1;
 }
 
@@ -83,6 +82,11 @@ body {
 }
 
 
+.container-fluid {
+    overflow: hidden;
+}
+
+
 .container-fluid-index {
     height: 100vh;
     margin-top: 15em; /*center logo horizontally*/
@@ -92,6 +96,7 @@ body {
 .container-fluid {
     overflow: hidden;
 }
+
 
 .button-container {
     border: 0;
@@ -330,6 +335,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+
 
     color: white;
 }
