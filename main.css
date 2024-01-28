@@ -23,6 +23,23 @@
     background-size: contain;
     z-index: 1;
 }
+
+.logo-regular-index {
+    background-image: url(../assets/images/DARE.png);
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    mix-blend-mode: multiply;
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .fade-out {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -64,9 +81,23 @@ body {
 
 }
 
+
 .container-fluid {
     overflow: hidden;
 }
+
+
+.container-fluid-index {
+    height: 100vh;
+    margin-top: 15em; /*center logo horizontally*/
+}
+
+
+.container-fluid {
+    overflow: hidden;
+}
+
+
 .button-container {
     border: 0;
     background: transparent;
@@ -77,6 +108,12 @@ body {
     position: absolute;
     top: 75%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.button-container:hover {
     transform: translate(-50%, -50%);
 
 }
@@ -100,16 +137,25 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: 1em;
+    margin-top: 15em;
     animation: floatAnimation 2s infinite;
     font-family: Startup-Regular;
     color: #244257;
 }
 
 .call-to-action:hover {
-    color: rgba(61,118,145,1);
-    font-size: larger;
+    color:#244257;
+    border: 0;
+    background: transparent;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 17em;
+    animation: floatAnimation 2s infinite;
+    font-size: large;
 }
+
 .box {
     position: relative;
 }
@@ -155,7 +201,7 @@ body {
     color: #EDF5F7;
     border: 0;
     height: 7em;
-    transition: 0.8s;
+    transition: 0.8s ease;
 }
 
 .card a {
@@ -175,6 +221,11 @@ body {
     justify-content: center;
 }
 
+.first-card:hover a {
+    border-right: none !important;
+}
+
+
 .last-card {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -186,7 +237,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.last-card:hover a {
+    border-left: none !important;
+}
  .bg-gradient:hover {
     background: #102937;
     height: auto;
@@ -197,6 +250,7 @@ body {
 
 .card:hover {
     border-radius: 0;
+    border-right: 1px solid #EDF5F7 !important;
 }
 .card:hover a {
     position: absolute;
@@ -228,6 +282,7 @@ body {
     margin-left: 0;
     border: none;
 }
+
 
 .hidden {
     display: none;
@@ -264,15 +319,8 @@ body {
 }
 
 
-.transparency-text {
-    color: #EDF5F7;
-    text-align: left;
-    font-size: 1em;
-}
-
 .footer {
     background: #061829;
-    mix-blend-mode: multiply;
     width: 100%;
     position: fixed;
     left: 0;
@@ -287,6 +335,13 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+
+
+    color: white;
+}
+
+.text-info a {
+    color: white;
 }
 
 /*media queries*/
