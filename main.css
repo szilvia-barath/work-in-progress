@@ -15,13 +15,12 @@
 }
 
 .logo-regular {
-    background-image: url(../assets/images/DARE.png);
+    background-image: url(../assets/images/DARE3.png);
     height: 50vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    mix-blend-mode: multiply;
     z-index: 1;
 }
 .fade-out {
@@ -48,16 +47,16 @@ body {
     background-size: contain;
     height: 100%;
 }
+
 .background-wave {
     position: absolute;
     margin: 0;
     padding: 0;
-
     width: 100%;
     height: 100vh;
     opacity: 0.45;
-    background: url('../assets/images/wave.svg') repeat center center fixed;
-    background-size: contain;
+    background: url('../assets/images/wave.svg');
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -65,6 +64,9 @@ body {
 
 }
 
+.container-fluid {
+    overflow: hidden;
+}
 .button-container {
     border: 0;
     background: transparent;
@@ -148,7 +150,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 0px;
+    border-radius: 0px !important;
     box-sizing: border-box;
     color: #EDF5F7;
     border: 0;
@@ -167,7 +169,7 @@ body {
 }
 
 .first-card a {
-    border-right: 1px solid #EDF5F7;
+    border-right: 1px solid #EDF5F7 !important;
     padding-right: 2em;
     align-items: center;
     justify-content: center;
@@ -179,7 +181,7 @@ body {
 }
 
 .last-card a {
-    border-left: 1px solid #EDF5F7;
+    border-left: 1px solid #EDF5F7 !important;
     padding-left: 2em;
     align-items: center;
     justify-content: center;
@@ -285,7 +287,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-
 }
 
 /*media queries*/
