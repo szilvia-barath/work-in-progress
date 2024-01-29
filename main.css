@@ -71,6 +71,14 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+
+}
+
+.height {
+    display: flex;
+    min-height: 100%;
+    overflow: scroll;
+    margin: 0 auto;
 }
 
 .background-wave {
@@ -95,7 +103,8 @@ body {
 
 .container-fluid {
     max-width: 100vw;
-    overflow: hidden;
+    height: 100vh;
+
 }
 
 
@@ -103,9 +112,6 @@ body {
     height: 100vh;
     margin-top: 15em; /*center logo horizontally*/
 }
-
-
-
 
 
 
@@ -266,7 +272,9 @@ body {
     left: 0;
     display: block;
     padding: 1em;
-    font-size: 0.7rem;
+    font-size: 0.5em;
+    margin-top: 1.5em;
+    align-text: justify;
 }
 
 .card:hover p.hidden {
@@ -280,16 +288,9 @@ body {
 .hidden {
     display: none;
 }
-.visible {
-    display: block;
-    color: #EDF5F7;
-}
+
 .text-white {
     color: #EDF5F7 !important;
-}
-
-.hidden-cards {
-    display: none;
 }
 
 .smaller-logo {
@@ -301,23 +302,16 @@ body {
     margin: 0 auto;
 }
 
-.transparency-section {
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+
+.dynamic-text {
     display: flex;
     flex-direction: column;
-    font-size: 0.55em;
-    width: 80%;
-    overflow: visible !important;
-
+    background: #061829;
+    color: #fff;
+    padding: 1.5em;
+    align-text: justify;
 }
-
-.transparency-text {
-
-}
-
-.footer {
+.container-footer {
     background: #061829;
     width: 100%;
     position: fixed;
@@ -325,25 +319,26 @@ body {
     bottom: 0;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
     align-items: center;
     justify-content: center;
-
-
-}
-.text-info {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    color: white;
 }
 
-.text-info a {
-    color: white;
-
+.footer {
+    background: #061829;
+align-items: center;
+justify-content: center;
+display: flex;
 }
+
+.footer span {
+    margin-top: 1.5em;
+}
+
+.footer span a {
+font-size: 1em;
+}
+
+
 
 
 /*media queries*/

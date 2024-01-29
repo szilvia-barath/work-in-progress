@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var bgGradient = document.querySelector('.bg-gradient');
     var transparencyText = document.querySelector('.transparency-text');
     var backButton = document.querySelector('.btn-primary');
+    var body = document.body;
 
     transparencyLink.addEventListener('click', function () {
         cardsContainer.style.display = (cardsContainer.style.display === 'none') ? 'flex' : 'none';
@@ -14,18 +15,20 @@ document.addEventListener('DOMContentLoaded', function () {
         bgGradient.classList.toggle('larger-bg-gradient');
         transparencyText.classList.remove('hidden');
         transparencyText.classList.add('dynamic-text');
+        body.classList.add('height')
     });
 
     backButton.addEventListener('click', function () {
         cardsContainer.style.display = 'flex';
-        textInfo.style.display = 'block';
+        textInfo.style.display = 'flex';
         logoRegular.classList.remove('smaller-logo');
         bgGradient.classList.remove('larger-bg-gradient');
         transparencyText.classList.remove('dynamic-text');
         transparencyText.classList.add('hidden');
-    });
-});
 
+    });
+
+});
 function navigateToPage2() {
     document.body.classList.add('fade-out');
     setTimeout(function () {
