@@ -25,7 +25,7 @@
 }
 
 .logo-regular-index {
-    background-image: url(../assets/images/DARE.png);
+    background-image: url(../assets/images/DARE3.png);
     height: 40vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -163,18 +163,18 @@ body {
     margin-top: 15em;
     animation: floatAnimation 2s infinite;
     font-family: Startup-Regular;
-    color: #244257;
+    color: #9dafb7;
 }
 
 .call-to-action:hover {
-    color:#244257;
+    color: #9dafb7;
     border: 0;
     background: transparent;
     padding: 1em;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-top: 17em;
+    margin-top: 18em;
     animation: floatAnimation 2s infinite;
     font-size: large;
 }
@@ -279,7 +279,7 @@ body {
     display: block;
     padding: 1em;
     font-size: 0.5em;
-    margin-top: 1.5em;
+    margin-top: 2em;
     align-text: justify;
 }
 
