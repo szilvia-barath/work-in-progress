@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var transparencyText = document.querySelector('.transparency-text');
     var backButton = document.querySelector('.btn-primary');
     var body = document.body;
+    var container = document.querySelector('.container-fluid')
+    var footer = document.querySelector('.footer');
 
     transparencyLink.addEventListener('click', function () {
         cardsContainer.style.display = (cardsContainer.style.display === 'none') ? 'flex' : 'none';
@@ -15,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
         bgGradient.classList.toggle('larger-bg-gradient');
         transparencyText.classList.remove('hidden');
         transparencyText.classList.add('dynamic-text');
-        body.classList.add('height')
+        container.classList.add('height');
+        footer.classList.add('hidden');
     });
 
     backButton.addEventListener('click', function () {
@@ -25,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
         bgGradient.classList.remove('larger-bg-gradient');
         transparencyText.classList.remove('dynamic-text');
         transparencyText.classList.add('hidden');
+        container.classList.remove('height');
+        footer.classList.remove('hidden');
 
     });
 
